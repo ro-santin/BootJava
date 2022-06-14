@@ -24,31 +24,30 @@ public class JavaBot {
     public static void main(String[] args) throws AWTException {
         Locale localeBrasileiro = new Locale("pt", "BR");
         // TODO code application logic here
-        System.out.println("?? é ã");
-//    Robot robo = new Robot();
-//    
-//    robo.setAutoDelay(500);
-//    
-//    robo.delay(2000);
-//    
-//         
-//    
-//    
-//    robo.keyPress(KeyEvent.VK_WINDOWS);
-//    robo.keyPress(KeyEvent.VK_R);
-//    
-//    robo.keyRelease(KeyEvent.VK_R);
-//    robo.keyRelease(KeyEvent.VK_WINDOWS);
-//    
-//    robo.setAutoDelay(50);
-//     RoboSoletrando roboSoletrando = new RoboSoletrando(robo);
-//    roboSoletrando.escrever("CMD");
-//    
-//    robo.keyPress(KeyEvent.VK_ENTER);
-//    robo.keyRelease(KeyEvent.VK_ENTER); 
-//    
-//     robo.setAutoDelay(50);
-     
+       
+    Robot robo = new Robot();
+    
+    robo.setAutoDelay(500);
+    
+    robo.delay(2000);
+    
+         
+    
+    
+    robo.keyPress(KeyEvent.VK_WINDOWS);
+    robo.keyPress(KeyEvent.VK_R);
+    
+    robo.keyRelease(KeyEvent.VK_R);
+    robo.keyRelease(KeyEvent.VK_WINDOWS);
+    
+    robo.setAutoDelay(50);
+     RoboSoletrando roboSoletrando = new RoboSoletrando(robo);
+    roboSoletrando.escrever("CMD");
+    
+    robo.keyPress(KeyEvent.VK_ENTER);
+    robo.keyRelease(KeyEvent.VK_ENTER); 
+    
+         
    
     
 //    robo.setAutoDelay(300);
@@ -60,10 +59,34 @@ public class JavaBot {
 //    
 //    robo.keyPress(KeyEvent.VK_DELETE);
 //    robo.keyRelease(KeyEvent.VK_DELETE);
-//    
-//     robo.setAutoDelay(50);
-//     RoboSoletrando roboSoletrando2 = new RoboSoletrando(robo);
-//     roboSoletrando.escrever("bora apagar tudo que tem nesse pc");
+    
+     robo.setAutoDelay(10);
+     RoboSoletrando roboSoletrando2 = new RoboSoletrando(robo);
+     roboSoletrando.escrever("  bora apagar tudo que tem nesse pc  ");
+     
+     robo.setAutoDelay(50);
+     
+     robo.keyPress(KeyEvent.VK_ALT);
+     robo.keyPress(KeyEvent.VK_SPACE);
+     robo.keyRelease(KeyEvent.VK_SPACE);
+     robo.keyRelease(KeyEvent.VK_ALT);
+     
+     robo.delay(500);
+     roboSoletrando.escrever("x");
+     
+     robo.keyPress(KeyEvent.VK_ALT);
+     robo.keyPress(KeyEvent.VK_SPACE);
+     robo.keyRelease(KeyEvent.VK_SPACE);
+     robo.keyRelease(KeyEvent.VK_ALT);
+     
+     robo.delay(500);
+     
+roboSoletrando.escrever("r");
+     
+     
+     
+     
+     
     
     
     }
